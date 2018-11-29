@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	 function api(data) {
+	 	return new Promise((resolve,reject) => {
+	 		setTimeout(function(){
+	            console.log('开始做饭');
+	            resolve(data);
+	        }, 1000);
+	 	})
+	 }
+	 function nextStep(data,cb,eb) {
+	 	console.log(`吃饭喽`)
+	 	
+	 }
+	 function finish() {
+	 	console.log('finish');
+	 }
+	 api('洗碗吧').then((res) => {
+	 	nextStep(res, (res)=> {
+	 		console.log(res)
+	 	},() => {
+	 		console.log('wobus')
+	 	})
+	 }).then((res) => {
+	 		finish()
+	 })
+	//  let p = new Promise((resolve, reject) => {
+	//     console.log('立即执行!');
+	//     resolve('返回成功!')
+	// });
+	//  return p;
+
+	// console.log('promise后执行!');
+
+	// p.then(value => {
+	//     console.log(value)
+	// });
+</script>
+</html>

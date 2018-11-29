@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="btn">13131</button>
+	<p id="dd"></p>
+</body>
+<script>
+
+
+document.getElementById('btn').onclick = ()=>{
+	var ww = {
+
+	}
+	arr = [];
+	console.log(1,arr)
+	console.log(window)
+
+	setTimeout(() => {
+		console.log(arr);
+		let aq = {"income":{"realname":"体验帐号","todayincome":"0.00","monthincome":"104.80","income":"0.00","hourly_income":[{"time":"00:00-1:00","amount":"0.00","flow":0},{"time":"01:00-2:00","amount":"0.00","flow":0},{"time":"02:00-3:00","amount":"0.00","flow":0},{"time":"03:00-4:00","amount":"0.00","flow":0},{"time":"04:00-5:00","amount":"0.00","flow":0},{"time":"05:00-6:00","amount":"0.00","flow":0},{"time":"06:00-7:00","amount":"0.00","flow":0},{"time":"07:00-8:00","amount":"0.00","flow":0},{"time":"08:00-9:00","amount":"0.00","flow":0},{"time":"09:00-10:00","amount":"0.00","flow":0},{"time":"10:00-11:00","amount":"0.00","flow":0},{"time":"11:00-12:00","amount":"0.00","flow":0},{"time":"12:00-13:00","amount":"0.00","flow":0}]},"latelyIncome":{"income":{"1":{"key":"08-1","value":"0.00"},"2":{"key":"08-2","value":"0.00"},"3":{"key":"08-3","value":"0.00"},"4":{"key":"08-4","value":"0.00"},"5":{"key":"08-5","value":"0.00"},"6":{"key":"08-6","value":"0.00"},"7":{"key":"08-7","value":"26.97"},"8":{"key":"08-8","value":"33.43"},"9":{"key":"08-9","value":"39.66"},"10":{"key":"08-10","value":"4.74"},"11":{"key":"08-11","value":"0.00"},"12":{"key":"08-12","value":"0.00"},"13":{"key":"08-13","value":"0.00"},"14":{"key":"08-14","value":"0.00"},"15":{"key":"08-15","value":"0.00"},"16":{"key":"08-16","value":"0.00"},"17":{"key":"08-17","value":"0.00"},"18":{"key":"08-18","value":"0.00"},"19":{"key":"08-19","value":"0.00"},"20":{"key":"08-20","value":"0.00"},"21":{"key":"08-21","value":"0.00"},"22":{"key":"08-22","value":"0.00"},"23":{"key":"08-23","value":"0.00"},"24":{"key":"08-24","value":"0.00"},"25":{"key":"08-25","value":"0.00"},"26":{"key":"08-26","value":"0.00"},"27":{"key":"08-27","value":"0.00"},"28":{"key":"08-28","value":"0.00"},"29":{"key":"08-29","value":"0.00"},"30":{"key":"08-30","value":"0.00"}},"flow_income":[{"time":"08-1","amount":"0.00","flow":0},{"time":"08-2","amount":"0.00","flow":0},{"time":"08-3","amount":"0.00","flow":0},{"time":"08-4","amount":"0.00","flow":0},{"time":"08-5","amount":"0.00","flow":0},{"time":"08-6","amount":"0.00","flow":0},{"time":"08-7","amount":"26.97","flow":"6732"},{"time":"08-8","amount":"33.43","flow":"8359"},{"time":"08-9","amount":"39.66","flow":"9916"},{"time":"08-10","amount":"4.74","flow":"1191"},{"time":"08-11","amount":"0.00","flow":0},{"time":"08-12","amount":"0.00","flow":0},{"time":"08-13","amount":"0.00","flow":0},{"time":"08-14","amount":"0.00","flow":0},{"time":"08-15","amount":"0.00","flow":0},{"time":"08-16","amount":"0.00","flow":0},{"time":"08-17","amount":"0.00","flow":0},{"time":"08-18","amount":"0.00","flow":0},{"time":"08-19","amount":"0.00","flow":0},{"time":"08-20","amount":"0.00","flow":0},{"time":"08-21","amount":"0.00","flow":0},{"time":"08-22","amount":"0.00","flow":0},{"time":"08-23","amount":"0.00","flow":0},{"time":"08-24","amount":"0.00","flow":0},{"time":"08-25","amount":"0.00","flow":0},{"time":"08-26","amount":"0.00","flow":0},{"time":"08-27","amount":"0.00","flow":0},{"time":"08-28","amount":"0.00","flow":0},{"time":"08-29","amount":"0.00","flow":0},{"time":"08-30","amount":"0.00","flow":0}]}};
+		for (var i in aq.latelyIncome.income) {
+                            arr.push(aq.latelyIncome.income[i].key)
+                        }
+                        // ////console.log(this.linetime);
+                        // for (var i in data.latelyIncome.income) {
+                        //     this.linedata.push(data.latelyIncome.income[i].value)
+                        // }
+		document.getElementById('dd').innerHTML = JSON.stringify(arr);
+	console.log(document.getElementById('dd').innerHTML)
+	},3000)
+
+}
+</script>
+</html>
